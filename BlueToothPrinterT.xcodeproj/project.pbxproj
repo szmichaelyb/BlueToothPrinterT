@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88F171D61C477FB40083A19E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171D51C477FB40083A19E /* main.m */; };
+		88F171D91C477FB40083A19E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171D81C477FB40083A19E /* AppDelegate.m */; };
+		88F171DC1C477FB40083A19E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171DB1C477FB40083A19E /* ViewController.m */; };
+		88F171DF1C477FB40083A19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F171DD1C477FB40083A19E /* Main.storyboard */; };
+		88F171E11C477FB40083A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F171E01C477FB40083A19E /* Assets.xcassets */; };
+		88F171E41C477FB40083A19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F171E21C477FB40083A19E /* LaunchScreen.storyboard */; };
+		88F171F01C477FC90083A19E /* BluePrinterFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171ED1C477FC90083A19E /* BluePrinterFormat.m */; };
+		88F171F11C477FC90083A19E /* BluePrinterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171EF1C477FC90083A19E /* BluePrinterManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88F171D11C477FB40083A19E /* BlueToothPrinterT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothPrinterT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F171D51C477FB40083A19E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88F171D71C477FB40083A19E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88F171D81C477FB40083A19E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88F171DA1C477FB40083A19E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88F171DB1C477FB40083A19E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88F171DE1C477FB40083A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88F171E01C477FB40083A19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88F171E31C477FB40083A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88F171E51C477FB40083A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F171EC1C477FC90083A19E /* BluePrinterFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluePrinterFormat.h; sourceTree = "<group>"; };
+		88F171ED1C477FC90083A19E /* BluePrinterFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluePrinterFormat.m; sourceTree = "<group>"; };
+		88F171EE1C477FC90083A19E /* BluePrinterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluePrinterManager.h; sourceTree = "<group>"; };
+		88F171EF1C477FC90083A19E /* BluePrinterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluePrinterManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88F171CE1C477FB40083A19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88F171C81C477FB40083A19E = {
+			isa = PBXGroup;
+			children = (
+				88F171D31C477FB40083A19E /* BlueToothPrinterT */,
+				88F171D21C477FB40083A19E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88F171D21C477FB40083A19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88F171D11C477FB40083A19E /* BlueToothPrinterT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88F171D31C477FB40083A19E /* BlueToothPrinterT */ = {
+			isa = PBXGroup;
+			children = (
+				88F171EB1C477FC90083A19E /* iosBluePrinter */,
+				88F171D71C477FB40083A19E /* AppDelegate.h */,
+				88F171D81C477FB40083A19E /* AppDelegate.m */,
+				88F171DA1C477FB40083A19E /* ViewController.h */,
+				88F171DB1C477FB40083A19E /* ViewController.m */,
+				88F171DD1C477FB40083A19E /* Main.storyboard */,
+				88F171E01C477FB40083A19E /* Assets.xcassets */,
+				88F171E21C477FB40083A19E /* LaunchScreen.storyboard */,
+				88F171E51C477FB40083A19E /* Info.plist */,
+				88F171D41C477FB40083A19E /* Supporting Files */,
+			);
+			path = BlueToothPrinterT;
+			sourceTree = "<group>";
+		};
+		88F171D41C477FB40083A19E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88F171D51C477FB40083A19E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F171EB1C477FC90083A19E /* iosBluePrinter */ = {
+			isa = PBXGroup;
+			children = (
+				88F171EC1C477FC90083A19E /* BluePrinterFormat.h */,
+				88F171ED1C477FC90083A19E /* BluePrinterFormat.m */,
+				88F171EE1C477FC90083A19E /* BluePrinterManager.h */,
+				88F171EF1C477FC90083A19E /* BluePrinterManager.m */,
+			);
+			name = iosBluePrinter;
+			path = "iosBluePrinter-master";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88F171D01C477FB40083A19E /* BlueToothPrinterT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F171E81C477FB40083A19E /* Build configuration list for PBXNativeTarget "BlueToothPrinterT" */;
+			buildPhases = (
+				88F171CD1C477FB40083A19E /* Sources */,
+				88F171CE1C477FB40083A19E /* Frameworks */,
+				88F171CF1C477FB40083A19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueToothPrinterT;
+			productName = BlueToothPrinterT;
+			productReference = 88F171D11C477FB40083A19E /* BlueToothPrinterT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88F171C91C477FB40083A19E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = huangxinyu;
+				TargetAttributes = {
+					88F171D01C477FB40083A19E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 88F171CC1C477FB40083A19E /* Build configuration list for PBXProject "BlueToothPrinterT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88F171C81C477FB40083A19E;
+			productRefGroup = 88F171D21C477FB40083A19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88F171D01C477FB40083A19E /* BlueToothPrinterT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88F171CF1C477FB40083A19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F171E41C477FB40083A19E /* LaunchScreen.storyboard in Resources */,
+				88F171E11C477FB40083A19E /* Assets.xcassets in Resources */,
+				88F171DF1C477FB40083A19E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88F171CD1C477FB40083A19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F171DC1C477FB40083A19E /* ViewController.m in Sources */,
+				88F171D91C477FB40083A19E /* AppDelegate.m in Sources */,
+				88F171D61C477FB40083A19E /* main.m in Sources */,
+				88F171F01C477FC90083A19E /* BluePrinterFormat.m in Sources */,
+				88F171F11C477FC90083A19E /* BluePrinterManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88F171DD1C477FB40083A19E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F171DE1C477FB40083A19E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88F171E21C477FB40083A19E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F171E31C477FB40083A19E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88F171E61C477FB40083A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88F171E71C477FB40083A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88F171E91C477FB40083A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlueToothPrinterT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chushi07.BlueToothPrinterT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88F171EA1C477FB40083A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlueToothPrinterT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chushi07.BlueToothPrinterT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88F171CC1C477FB40083A19E /* Build configuration list for PBXProject "BlueToothPrinterT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F171E61C477FB40083A19E /* Debug */,
+				88F171E71C477FB40083A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88F171E81C477FB40083A19E /* Build configuration list for PBXNativeTarget "BlueToothPrinterT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F171E91C477FB40083A19E /* Debug */,
+				88F171EA1C477FB40083A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88F171C91C477FB40083A19E /* Project object */;
+}
