@@ -9,6 +9,9 @@
 #import "BluePrinterManager.h"
 #import "BluePrinterFormat.h"
 
+#define Printer169 @"49535343-FE7D-4AE5-8FA9-9FAFD205E455"
+#define Printer200 @"E7810A71-73AE-499D-8C15-FAA9AEF0C3F2"
+
 @interface BluePrinterManager ()<CBCentralManagerDelegate,CBPeripheralDelegate>
 
 @property (nonatomic, strong, readwrite)CBCentralManager* centralManager;
@@ -107,12 +110,12 @@
     for (CBService* service in  peripheral.services) {
         NSLog(@"扫描到的serviceUUID:%@",service.UUID);
         //这里其实三个服务都可以做打印，但是我只选择了其中一个
-        if ([service.UUID isEqual:[CBUUID UUIDWithString:@"49535343-FE7D-4AE5-8FA9-9FAFD205E455"]]) {
+        //if ([service.UUID isEqual:[CBUUID UUIDWithString:Printer200]]) {
             //扫描特征
             self.connectService = service;
             [peripheral discoverCharacteristics:nil forService:service];
             break;
-        }
+        //}
     }
 }
 
@@ -180,6 +183,24 @@
 
 - (void)setupPrinterState:(BluePrinterState)state
 {
+    
+//    final byte[][] byteCommands = {{0x1b, 0x40},// 复位打印机
+//        
+//        {0x1b, 0x4d, 0x00},// 标准ASCII字体
+//        
+//        {0x1b, 0x4d, 0x01},// 压缩ASCII字体
+//        {0x1d, 0x21, 0x00},// 字体不放大
+//        {0x1d, 0x21, 0x11},// 宽高加倍
+//        {0x1b, 0x45, 0x00},// 取消加粗模式
+//        {0x1b, 0x45, 0x01},// 选择加粗模式
+//        {0x1b, 0x7b, 0x00},// 取消倒置打印
+//        {0x1b, 0x7b, 0x01},// 选择倒置打印
+//        {0x1d, 0x42, 0x00},// 取消黑白反显
+//        {0x1d, 0x42, 0x01},// 选择黑白反显
+//        {0x1b, 0x56, 0x00},// 取消顺时针旋转90°
+//        {0x1b, 0x56, 0x01},// 选择顺时针旋转90°
+//    };
+    
     unsigned char* cData = (unsigned char *)calloc(100, sizeof(unsigned char));
     NSData* sendData = nil;
     switch (state) {

@@ -44,7 +44,7 @@
 - (IBAction)printButtonClick:(id)sender {
     //设置标题
     //1.设置字体大小
-    [self.manager setupPrinterState:BluePrinterStateSetFontDefult];
+    [self.manager setupPrinterState:BluePrinterStateSetFontSizeBig];
     //2.设置居中
     [self.manager setupPrinterState:BluePrinterStateAlignmentCenter];
     
