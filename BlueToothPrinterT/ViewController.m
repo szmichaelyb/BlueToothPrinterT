@@ -7,17 +7,19 @@
 //
 
 #import "ViewController.h"
-#import "BluePrinterManager.h"
-#import "BluePrinterFormat.h"
+//#import "BluePrinterManager.h"
+//#import "BluePrinterFormat.h"
+#import "HHBluetoothPrinterManager.h"
+#import "HHPrinterFormat.h"
 
-@interface ViewController ()<BluePrinterDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<HHBluetoothPrinterManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *beginScan;
 @property (weak, nonatomic) IBOutlet UIButton *cancelScan;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIButton *printButton;
 
-@property (nonatomic, strong) BluePrinterManager *manager;
+@property (nonatomic, strong) HHBluetoothPrinterManager *manager;
 //选中的设备
 @property (nonatomic, strong) CBPeripheral *selectedPeripheral;
 @property (nonatomic, strong) NSMutableArray *dataArray;
@@ -29,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.manager = [BluePrinterManager shareInstance];
+    self.manager = [HHBluetoothPrinterManager sharedManager];
     self.manager.delegate = self;
     self.dataArray = [[NSMutableArray alloc] init];
     
@@ -44,14 +46,15 @@
 - (IBAction)printButtonClick:(id)sender {
     //设置标题
     //1.设置字体大小
-    [self.manager setupPrinterState:BluePrinterStateSetFontSizeBig];
+    [self.manager setupPrinterState:HHBluePrinterStateSetFontDefult];
     //2.设置居中
-    [self.manager setupPrinterState:BluePrinterStateAlignmentCenter];
+    [self.manager setupPrinterState:HHBluePrinterStateAlignmentLeft];
     
-    NSString* title = [[BluePrinterFormat alloc] printTitle:self.textView.text];
+    NSString* title = [[HHPrinterFormat alloc] printTitle:self.textView.text];
     NSStringEncoding gbk = CFStringConvertEncodingToNSStringEncoding (kCFStringEncodingGB_18030_2000);
     NSData *cmdData = [title dataUsingEncoding:gbk];
     [self.manager startPrint:cmdData];
+    
 }
 
 /**
@@ -84,8 +87,8 @@
     NSLog(@"设备连接成功");
     //[peripheral discoverServices:nil];
     //初始化
-    [self.manager setupPrinterState:BluePrinterStateInitialize];
-    [self.manager setupPrinterState:BluePrinterStateSetLanage];
+    [self.manager setupPrinterState:HHBluePrinterStateInitialize];
+    [self.manager setupPrinterState:HHBluePrinterStateSetLanage];
 }
 
 #pragma mark - tableView delegate & dataSource

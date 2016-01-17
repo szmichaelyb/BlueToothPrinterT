@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85845F8B1C4BE86C005D7536 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85845F861C4BE86C005D7536 /* ViewController.m */; };
+		85845F8C1C4BE86C005D7536 /* HHBluetoothPrinterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85845F881C4BE86C005D7536 /* HHBluetoothPrinterManager.m */; };
+		85845F8D1C4BE86C005D7536 /* HHPrinterFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 85845F8A1C4BE86C005D7536 /* HHPrinterFormat.m */; };
 		88F171D61C477FB40083A19E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171D51C477FB40083A19E /* main.m */; };
 		88F171D91C477FB40083A19E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171D81C477FB40083A19E /* AppDelegate.m */; };
-		88F171DC1C477FB40083A19E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F171DB1C477FB40083A19E /* ViewController.m */; };
 		88F171DF1C477FB40083A19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F171DD1C477FB40083A19E /* Main.storyboard */; };
 		88F171E11C477FB40083A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F171E01C477FB40083A19E /* Assets.xcassets */; };
 		88F171E41C477FB40083A19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F171E21C477FB40083A19E /* LaunchScreen.storyboard */; };
@@ -18,12 +20,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85845F851C4BE86C005D7536 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85845F861C4BE86C005D7536 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85845F871C4BE86C005D7536 /* HHBluetoothPrinterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBluetoothPrinterManager.h; sourceTree = "<group>"; };
+		85845F881C4BE86C005D7536 /* HHBluetoothPrinterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBluetoothPrinterManager.m; sourceTree = "<group>"; };
+		85845F891C4BE86C005D7536 /* HHPrinterFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPrinterFormat.h; sourceTree = "<group>"; };
+		85845F8A1C4BE86C005D7536 /* HHPrinterFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPrinterFormat.m; sourceTree = "<group>"; };
 		88F171D11C477FB40083A19E /* BlueToothPrinterT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothPrinterT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F171D51C477FB40083A19E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88F171D71C477FB40083A19E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88F171D81C477FB40083A19E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88F171DA1C477FB40083A19E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88F171DB1C477FB40083A19E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88F171DE1C477FB40083A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F171E01C477FB40083A19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F171E31C477FB40083A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +73,12 @@
 				88F171EB1C477FC90083A19E /* iosBluePrinter */,
 				88F171D71C477FB40083A19E /* AppDelegate.h */,
 				88F171D81C477FB40083A19E /* AppDelegate.m */,
-				88F171DA1C477FB40083A19E /* ViewController.h */,
-				88F171DB1C477FB40083A19E /* ViewController.m */,
+				85845F851C4BE86C005D7536 /* ViewController.h */,
+				85845F861C4BE86C005D7536 /* ViewController.m */,
+				85845F871C4BE86C005D7536 /* HHBluetoothPrinterManager.h */,
+				85845F881C4BE86C005D7536 /* HHBluetoothPrinterManager.m */,
+				85845F891C4BE86C005D7536 /* HHPrinterFormat.h */,
+				85845F8A1C4BE86C005D7536 /* HHPrinterFormat.m */,
 				88F171DD1C477FB40083A19E /* Main.storyboard */,
 				88F171E01C477FB40083A19E /* Assets.xcassets */,
 				88F171E21C477FB40083A19E /* LaunchScreen.storyboard */,
@@ -168,11 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F171DC1C477FB40083A19E /* ViewController.m in Sources */,
 				88F171D91C477FB40083A19E /* AppDelegate.m in Sources */,
 				88F171D61C477FB40083A19E /* main.m in Sources */,
 				88F171F01C477FC90083A19E /* BluePrinterFormat.m in Sources */,
+				85845F8D1C4BE86C005D7536 /* HHPrinterFormat.m in Sources */,
 				88F171F11C477FC90083A19E /* BluePrinterManager.m in Sources */,
+				85845F8B1C4BE86C005D7536 /* ViewController.m in Sources */,
+				85845F8C1C4BE86C005D7536 /* HHBluetoothPrinterManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +331,7 @@
 				88F171EA1C477FB40083A19E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
